@@ -11,6 +11,7 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	X11-devel
 
 %description
