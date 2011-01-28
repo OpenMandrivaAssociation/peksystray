@@ -6,13 +6,14 @@ Name: 	 	%{name}
 Summary: 	Small system tray requiring only X
 Version: 	%{version}
 Release: 	%{release}
-
 Source:		%{name}-%{version}.tar.bz2
+Patch0:		peksystray-0.4.0-fix-str-fmt.patch
+Patch1:		peksystray-0.4.0-fix-link.patch
 URL:		http://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	X11-devel
+BuildRequires:	libx11-devel
 
 %description
 Peksystray is a small system tray (also called notification tray) designed for
@@ -32,11 +33,14 @@ automatically display another window in order to display more icons.
 
 %prep
 %setup -q
+%patch0 -p0
+%patch1 -p0
 
 %build
+autoreconf -fi
 %configure2_5x
-make peksystray_LDADD=""
-										
+%make
+
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
