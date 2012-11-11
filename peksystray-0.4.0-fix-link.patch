@@ -1,0 +1,13 @@
+--- configure.in.link	2011-01-28 10:23:35.000000000 +0100
++++ configure.in	2011-01-28 10:23:52.000000000 +0100
+@@ -21,8 +21,8 @@
+ 
+ CFLAGS="$CFLAGS $X_CFLAGS"
+ #x_includes="-I$x_includes"
+-LDFLAGS="$LDFLAGS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
+-#x_libraries="$X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
++#LDFLAGS="$LDFLAGS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
++x_libraries="$X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
+ 
+ AC_SUBST(x_includes)
+ AC_SUBST(x_libraries)
