@@ -52,3 +52,22 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog THANKS REFS README NEWS TODO
 %{_bindir}/%name
+
+
+%changelog
+* Fri Jan 28 2011 Funda Wang <fwang@mandriva.org> 0.4.0-4mdv2011.0
++ Revision: 633654
+- fix build with latest cooker
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sat Jun 09 2007 Austin Acton <austin@mandriva.org> 0.4.0-1mdv2008.0
++ Revision: 37734
+- Import peksystray
+
