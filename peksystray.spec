@@ -1,6 +1,6 @@
 %define name	peksystray
 %define version	0.4.0
-%define release %mkrel 4
+%define release  5
 
 Name: 	 	%{name}
 Summary: 	Small system tray requiring only X
@@ -12,7 +12,6 @@ Patch1:		peksystray-0.4.0-fix-link.patch
 URL:		http://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig(x11)
 
 %description
