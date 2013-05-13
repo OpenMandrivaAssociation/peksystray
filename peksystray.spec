@@ -13,7 +13,7 @@ URL:		http://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	libx11-devel
+BuildRequires:	pkgconfig(x11)
 
 %description
 Peksystray is a small system tray (also called notification tray) designed for
