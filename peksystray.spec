@@ -1,6 +1,6 @@
 %define name	peksystray
 %define version	0.4.0
-%define release  5
+%define release  6
 
 Name: 	 	%{name}
 Summary: 	Small system tray requiring only X
