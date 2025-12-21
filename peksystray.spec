@@ -12,6 +12,11 @@ Patch1:		peksystray-0.4.0-fix-link.patch
 URL:		https://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 
 %description
